@@ -1,0 +1,101 @@
+
+.parent {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  
+  
+  }
+
+  .background{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    animation: newProject 1s ease-in forwards 10 alternate;
+  }
+  .child{
+  
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  animation: newProject 1s ease-in forwards 3 alternate;
+  }
+
+  .thanos{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+
+  }
+
+  .parent:hover .child{
+    animation: newProject 1s ease-in forwards 3 alternate;
+  }
+
+  .spiderman{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    animation: newProject 1s ease-in forwards 1 alternate;
+  }
+
+  .basquiat{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px
+   }
+
+  
+
+
+  @keyframes newProject{
+    0%{
+      transform: translatex(0);
+    }
+    25%{
+      transform: translateY(1000%);
+    }
+    60%{
+      transform: translateX(1000%) translateY(1000%);
+      
+    }
+    100%{
+      transform: translateX(1000%);
+    }
+  }
+
+
+  .child2{
+  
+    animation: newProject2 10s ease-in forwards;
+    }
+
+    @keyframes newProject2{
+      0%{
+        transform: translatex(0);
+      }
+      25%{
+        transform: translateY(1000%);
+      }
+      60%{
+        transform: translateX(1000%) translateY(1000%);
+        
+      }
+      100%{
+        transform: translateX(1000%);
+      }
+    }
+
+
+    .child3{
+  
+      animation: newProject3;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+      40% {transform: translateY(-30px);} 
+      60% {transform: translateY(-15px);} 
+   } 
+
+   
